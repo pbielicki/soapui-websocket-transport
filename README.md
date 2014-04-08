@@ -6,11 +6,11 @@ WebSocket Transport Plugin for soapUI
 How to make it work?
 -------------
 
-# Build the project using Maven e.g.: <code>mvn clean package</code>
-# Copy target/soapui-websocket-transport.jar to SOAPUI_HOME/bin/ext
-# Copy factories/ directory to SOAPUI_HOME/bin
-# Start soapUI
-# Check the soapUI logs. You should see "...INFO:Adding factories from [SOAPUI_HOME/bin/factories/soapui-factories.xml]"
-# You can now send your SOAP message to WebSocket destinations e.g. ws://localhost:8080/example-webapp/echo
+1. Build the project using Maven e.g.: <code>mvn clean package</code>
+1. Copy <code>target/soapui-websocket-transport.jar</code> to <code>SOAPUI_HOME/bin/ext</code>
+1. Copy <code>factories/</code> directory to <code>SOAPUI_HOME/bin</code>
+1. Start soapUI
+1. Check the soapUI logs. You should see <code>"...INFO:Adding factories from [SOAPUI_HOME/bin/factories/soapui-factories.xml]"</code>
+1. You can now send your SOAP message to WebSocket destinations e.g. <code>ws://localhost:8080/example-webapp/echo</code>
 
 Tested with soapUI 4.5.x
