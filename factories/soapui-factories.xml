@@ -1,0 +1,6 @@
+<soapui-factories xmlns="http://eviware.com/soapui/config">
+  <factory 
+    id="WebSocketTransport" 
+    factoryType="com.eviware.soapui.impl.wsdl.submit.RequestTransportFactory" 
+    factoryClass="com.bielu.soapui.WebSocketRequestTransportFactory"/>
+</soapui-factories>
