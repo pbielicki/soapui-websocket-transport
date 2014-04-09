@@ -2,12 +2,13 @@ package com.bielu.soapui;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Vector;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
-import com.eviware.soapui.impl.support.AbstractHttpRequestInterface;
-import com.eviware.soapui.impl.wsdl.submit.transports.http.HttpResponse;
+import com.eviware.soapui.impl.wsdl.WsdlRequest;
 import com.eviware.soapui.impl.wsdl.submit.transports.http.SSLInfo;
+import com.eviware.soapui.impl.wsdl.submit.transports.http.WsdlResponse;
 import com.eviware.soapui.model.iface.Attachment;
 import com.eviware.soapui.model.iface.Request;
 import com.eviware.soapui.support.types.StringToStringsMap;
@@ -15,7 +16,7 @@ import com.eviware.soapui.support.types.StringToStringsMap;
 /**
  * @author Przemyslaw Bielicki
  */
-public class WebSocketResponse implements HttpResponse {
+public class WebSocketResponse implements WsdlResponse {
 
   private String responseContent;
   private Request request;
@@ -103,10 +104,6 @@ public class WebSocketResponse implements HttpResponse {
     }
   }
 
-  public AbstractHttpRequestInterface<?> getRequest() {
-    return (AbstractHttpRequestInterface<?>) request;
-  }
-
   public SSLInfo getSSLInfo() {
     return null;
   }
@@ -120,14 +117,24 @@ public class WebSocketResponse implements HttpResponse {
   }
 
   public String getMethod() {
-    return "POST";
+    return null;
   }
 
   public String getHttpVersion() {
-    return "1.1";
+    return null;
   }
 
   public int getStatusCode() {
-    return getResponseContent() != null ? 200 : 500;
+    return 0;
+  }
+
+  @Override
+  public Vector<?> getWssResult() {
+    return null;
+  }
+
+  @Override
+  public WsdlRequest getRequest() {
+    return (WsdlRequest) request;
   }
 }
