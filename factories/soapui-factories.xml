@@ -4,8 +4,4 @@
     factoryType="com.eviware.soapui.impl.wsdl.submit.RequestTransportFactory" 
     factoryClass="com.bielu.soapui.WebSocketRequestTransportFactory"/>
 
-  <factory 
-    id="WebSocketSslTransport" 
-    factoryType="com.eviware.soapui.impl.wsdl.submit.RequestTransportFactory" 
-    factoryClass="com.bielu.soapui.WebSocketSslRequestTransportFactory"/>
 </soapui-factories>

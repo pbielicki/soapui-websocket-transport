@@ -28,11 +28,11 @@ public class WebSocketResponse implements WsdlResponse {
   }
 
   public Attachment[] getAttachments() {
-    return null;
+    return new Attachment[0];
   }
 
   public Attachment[] getAttachmentsForPart(String arg0) {
-    return null;
+    return new Attachment[0];
   }
 
   public String getContentAsString() {
@@ -56,7 +56,7 @@ public class WebSocketResponse implements WsdlResponse {
   }
 
   public String[] getPropertyNames() {
-    return null;
+    return new String[0];
   }
 
   public byte[] getRawRequestData() {
