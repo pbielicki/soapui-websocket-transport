@@ -13,4 +13,6 @@ How to make it work?
 1. Check the soapUI logs. You should see <code>"...INFO:Adding factories from [SOAPUI_HOME/bin/factories/soapui-factories.xml]"</code>
 1. You can now send your SOAP message to WebSocket destinations e.g. <code>ws://localhost:8080/example-webapp/echo</code>
 
+Secured WebSocket endpoint i.e. **wss** is not supported at the moment.
+
 Tested with soapUI 4.5.x
