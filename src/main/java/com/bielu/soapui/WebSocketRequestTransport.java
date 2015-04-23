@@ -31,4 +31,10 @@ public class WebSocketRequestTransport implements RequestTransport {
     container.connectToServer(new WebSocketSoapClient(response), new URI(req.getEndpoint()));
     return response;
   }
+
+@Override
+public void insertRequestFilter(RequestFilter arg0, RequestFilter arg1) {
+	// TODO Auto-generated method stub
+	
+}
 }
