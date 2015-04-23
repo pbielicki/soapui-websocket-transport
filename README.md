@@ -15,4 +15,5 @@ How to make it work?
 
 Secured WebSocket endpoint i.e. **wss** is not supported at the moment.
 
-Tested with soapUI 4.5.x
+Tested with soapUI 5.1.2
+Note that the SmartBear repo is missing artifacts for 5.1.3!
