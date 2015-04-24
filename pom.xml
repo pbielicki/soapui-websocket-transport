@@ -3,13 +3,20 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.bielu</groupId>
   <artifactId>soapui-websocket-transport</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.1-SNAPSHOT</version>
+
+  <repositories>
+    <repository>
+      <id>soapui-repo</id>
+      <url>http://www.soapui.org/repository/maven2</url>
+    </repository>
+  </repositories>
 
   <dependencies>
     <dependency>
-      <groupId>eviware</groupId>
+      <groupId>com.smartbear.soapui</groupId>
       <artifactId>soapui</artifactId>
-      <version>4.5.1</version>
+      <version>5.1.2</version>
       <scope>provided</scope>
     </dependency>
 
